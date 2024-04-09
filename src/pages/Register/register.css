@@ -1,0 +1,97 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 100vh;
+  /* background-color: #003580; */
+}
+
+.registerWrapper{
+  width: 100%;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+}
+.registerRight {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.registerTop{
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.registerDesc {
+  font-size: 24px;
+}
+
+.registerTitle>h1{
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 5rem;
+
+}
+
+.registerBox {
+  margin-top: 50px;
+  height: 400px;
+  width: 50% ;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.registerInput {
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.registerInput:focus {
+  outline: none;
+}
+
+.registerButton {
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #1775ee;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.registerForgot {
+  text-align: center;
+  color: #1775ee;
+}
+
+.registerRegisterButton {
+  width: 60%;
+  align-self: center;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #42b72a;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}

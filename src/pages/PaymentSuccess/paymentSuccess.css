@@ -1,0 +1,25 @@
+.sContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.sText{
+    font-size: 5rem;
+    font-weight: 800;
+    color: green;
+}
+
+.sBtn{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 10px;
+    background-color: #003580;
+    color: white;
+    font-size: 1.5rem;
+    
+
+}

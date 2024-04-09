@@ -1,0 +1,113 @@
+.navbar {
+  /* margin: 0 200px 0 200px; */
+  display: flex;
+  justify-content: center;
+  background-color: #003580;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px; 
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.navItems{
+  display: flex;
+align-items: center;
+}
+
+.avatar{
+  margin-right: 20px;
+}
+
+.navButton{
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: #003580;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+
+.reserve {
+  width: 70vw;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.418);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.rContainer {
+  background-color: white;
+  padding: 20px;
+  position: relative;
+}
+
+.rClose {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: black;
+}
+
+.rItem {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.rItemInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: black;
+  position: relative;
+}
+
+.rItemDel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: red;
+}
+
+.rTitle {
+  font-weight: 500;
+}
+
+.rDesc {
+  font-weight: 300;
+}
+
+.rMax {
+  font-size: 12px;
+}
+
+.rPrice {
+  font-weight: 500;
+}
+
+.rNoBookingText{
+  color: rgb(230, 133, 53);
+  font-weight: 800;
+}
