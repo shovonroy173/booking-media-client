@@ -23,7 +23,7 @@ const Reserve = ({ setOpen, hotelId , price}) => {
   const [rooms, setRooms] = useState([]);
   useEffect(() => {
     const getRooms = async () => {
-      const res = await axios.get("https://booking-media-api.onrender.com/api/room");
+      const res = await axios.get("https://booking-media-api-1.onrender.com/api/room");
       setRooms(res.data);
     };
     getRooms();
@@ -77,7 +77,7 @@ console.log("LINE AT 60" , isFound);
       await Promise.all(
         selectedRooms.map((roomId) => {
           const res = axios.put(
-            `https://booking-media-api.onrender.com/api/room/availability/${roomId}`,
+            `https://booking-media-api-1.onrender.com/api/room/availability/${roomId}`,
             {
               dates: alldates,
               roomId: roomId,
@@ -86,7 +86,7 @@ console.log("LINE AT 60" , isFound);
           return res.data;
         })
       );
-      await axios.put("https://booking-media-api.onrender.com/api/auth/user/booking", {
+      await axios.put("https://booking-media-api-1.onrender.com/api/auth/user/booking", {
         hotelId,
         selectedRooms,
         userId,
@@ -94,7 +94,7 @@ console.log("LINE AT 60" , isFound);
       setOpen(false);
       setSucbar(true);
       const stripe = await loadStripe(KEY);
-      const res = await axios.post("https://booking-media-api.onrender.com/api/checkout/payment" , {
+      const res = await axios.post("https://booking-media-api-1.onrender.com/api/checkout/payment" , {
      hotelId,
         selectedRooms,
        userId,

@@ -64,7 +64,7 @@ const Hotel = () => {
   }
   useEffect(()=>{
     const getHotel = async()=>{
-      const res = await axios.get(`https://booking-media-api.onrender.com/api/hotel/find/${hotelId?.id}`);
+      const res = await axios.get(`https://booking-media-api-1.onrender.com/api/hotel/find/${hotelId?.id}`);
       setWait(false);
       setHotel(res.data);
     };

@@ -28,7 +28,7 @@ const List = () => {
   useEffect(() => {
     const getList = async () => {
       const res = await axios.get(
-        `https://booking-media-api.onrender.com/api/hotel?city=${destination}&min=${
+        `https://booking-media-api-1.onrender.com/api/hotel?city=${destination}&min=${
           minPrice || 0
         }&max=${maxPrice || 999}`
       );
@@ -39,7 +39,7 @@ const List = () => {
   }, [destination, minPrice, maxPrice]);
   const getList = async () => {
     const res = await axios.get(
-      `https://booking-media-api.onrender.com/api/hotel?city=${destination}&min=${
+      `https://booking-media-api-1.onrender.com/api/hotel?city=${destination}&min=${
         minPrice || 0
       }&max=${maxPrice || 999}`
     );

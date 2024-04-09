@@ -10,7 +10,7 @@ const PropertyList = () => {
   useEffect(() => {
     const getProperty = async () => {
       const res = await axios.get(
-        "https://booking-media-api.onrender.com/api/hotel/countByType"
+        "https://booking-media-api-1.onrender.com/api/hotel/countByType"
       );
       setWait(false);
       setProperties(res.data);

@@ -26,7 +26,7 @@ const Navbar = () => {
   useEffect(() => {
     const getUser = async () => {
       const res = await axios.get(
-        `https://booking-media-api.onrender.com/api/auth/find/${user?.currentUser?._id}`
+        `https://booking-media-api-1.onrender.com/api/auth/find/${user?.currentUser?._id}`
       );
       setLoggedUser(res.data);
     };
@@ -38,7 +38,7 @@ const Navbar = () => {
     try {
       const hotelPromises = bookings.map(async (item) => {
         const res = await axios.get(
-          `https://booking-media-api.onrender.com/api/hotel/find/${item?.hotelId?.id}`
+          `https://booking-media-api-1.onrender.com/api/hotel/find/${item?.hotelId?.id}`
         );
         return res.data;
       });
@@ -57,12 +57,12 @@ const Navbar = () => {
 
   const handleDelete = (hotelId)=>{
     const bookingDel = async()=>{
-      await axios.put(`https://booking-media-api.onrender.com/api/auth/delete/${hotelId}/${user?.currentUser?._id}`);
+      await axios.put(`https://booking-media-api-1.onrender.com/api/auth/delete/${hotelId}/${user?.currentUser?._id}`);
       
     }
     const clearDates = bookings.map(async (item) => {
       await axios.put(
-        `https://booking-media-api.onrender.com/api/room/booked/${item?.selectedRooms[0]}`
+        `https://booking-media-api-1.onrender.com/api/room/booked/${item?.selectedRooms[0]}`
       );
       
       
